@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.5;
+  padding-bottom: 1000px;
+}
+
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 */
+.container-dua {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 25px;
+}
+
+.layanan.satu {
+  background-color: rgb(235, 118, 118);
+}
+
+.layanan.dua {
+  background-color: rgb(111, 168, 243);
+}
+
+.layanan.tiga {
+  background-color: rgb(140, 223, 137);
+}
+
+/* Latihan 3 */
+.container-tiga {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* Latihan 4 */
+.container-empat {
+  width: 800px;
+  margin: 50px auto;
+  /* display: flex; */
+  /* border: 1px solid #000; */
+}
+
+.card {
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  /* overflow: hidden; */
+  text-align: center;
+  flex: 1;
+  /* justify-content: space-between; */
+}
+
+.card-header {
+  height: 120px;
+}
+
+.card-header img {
+  width: 100%;
+}
+
+/* Latihan Lima */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 2px solid black;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: #e67575;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  /* Latihan 3 */
+  .container-tiga {
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+
+  /* ------ */
+  .container-empat {
+    display: flex;
+  }
+
+  .card {
+    justify-content: space-between;
+  }
+
+  .card.huge {
+    transform: scale(1.1);
+  }
+}

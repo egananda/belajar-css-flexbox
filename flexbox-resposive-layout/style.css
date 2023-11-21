@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container > * {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.container-two > * {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.container-two {
+  display: flex;
+}
+
+header {
+  background-color: tomato;
+}
+
+.main {
+  background-color: lightblue;
+  order: 2;
+}
+
+.aside1 {
+  background-color: aquamarine;
+  order: 1;
+}
+
+.aside2 {
+  background-color: rgb(186, 127, 241);
+  order: 3;
+}
+
+footer {
+  background-color: blanchedalmond;
+}
+
+/* responsive brackpoints */
+@media (max-width: 800px) {
+  .container-two {
+    flex-direction: column;
+  }
+}
